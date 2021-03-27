@@ -1,6 +1,6 @@
 # useful-stuff
 A list and programs that is useful in this time
-Go to Wiki for mire info
+Go to Wiki for more info
 
 In folder Android, you find cool stuff for emulation and everything for ur android
 Limbo gold is best for sound(i will check what about memz nyan cat soon lol)
