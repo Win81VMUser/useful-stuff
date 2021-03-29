@@ -17,6 +17,6 @@ pulseaudio -v
 export QEMU_AUDIO_DRV=sdl
 export QEMU_SDL_SAMPLES=2048
 export QEMU_AUDIO_DRV=sdl
-echo "Everything is fine! Now test QEMU and have fun!
+echo "Everything is fine! Now test QEMU and have fun!"
 echo "Now qemu is starting... To quit type "quit" or press ctrl+c"
 qemu-system-x86_64 -boot n -monitor stdio -accel tcg -m 256 -soundhw all -vnc :1
