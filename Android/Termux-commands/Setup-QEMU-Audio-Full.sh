@@ -10,8 +10,6 @@ echo "Now setup will install x11-repo and qemu-system-x86_64 WITH SDL..."
 pkg update -y
 pkg install x11-repo -y
 pkg install qemu-system-x86_64 -y
-echo "Now setup will download a hdd file(if Win8.1VMUser uploaded it into disk images)
-echo "No disk found here... Wait... We can test it in another way!"
 echo "Now setup will run some commands to setup correctly audio on termux/qemu"
 pulseaudio --start
 pulseaudio -D
