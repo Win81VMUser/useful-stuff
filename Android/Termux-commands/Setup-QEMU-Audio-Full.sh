@@ -12,5 +12,7 @@ pkg install x11-repo -y
 pkg install qemu-system-x86_64 -y
 echo "Now setup will download a hdd file(if Win8.1VMUser uploaded it into disk images)
 echo "No disk found here... Wait... We can test it in another way!"
+echo "Let's download a installer that export and load necessary files for qemu audio to work
+wget https://raw.githubusercontent.com/Win81VMUser/useful-stuff/main/Android/Termux-commands/QEMU-Setup-Audio-EXPORT && bash QEMU-Setup-Audio-EXPORT.sh
 echo "Now qemu is starting... To quit type "quit" or press ctrl+c"
 qemu-system-x86_64 -boot n -monitor stdio -accel tcg -m 256 -vnc :1
