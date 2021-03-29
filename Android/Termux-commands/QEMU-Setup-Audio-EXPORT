@@ -1,0 +1,8 @@
+echo "Now setup will run some commands to setup correctly audio on termux/qemu"
+pulseaudio --start
+pulseaudio -D
+pulseaudio -v
+export QEMU_AUDIO_DRV=sdl
+export QEMU_SDL_SAMPLES=2048
+export QEMU_AUDIO_DRV=sdl
+echo "Everything is fine! Now test QEMU and have fun!
