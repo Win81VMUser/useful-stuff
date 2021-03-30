@@ -17,6 +17,9 @@ pulseaudio -v
 export QEMU_AUDIO_DRV=sdl
 export QEMU_SDL_SAMPLES=2048
 export QEMU_AUDIO_DRV=sdl
+echo "Cleaning temporary files...(setup-audio.sh)
+rm setup-audio.sh
 echo "Everything is fine! Now test QEMU and have fun!"
 echo "Now qemu is starting... To quit type "quit" or press ctrl+c"
 qemu-system-x86_64 -boot n -monitor stdio -accel tcg -m 256 -soundhw all -vnc :1
+echo "Done! Now you are 100% able to run qemu with perfect sound on your android phone!"
