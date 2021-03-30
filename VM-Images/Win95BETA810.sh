@@ -1,5 +1,5 @@
 echo "Welcome to Windows 95 BETA Build 810 hdd downloader!"
-echo Setup will now download and setup qemu/termux with audio fixed!"
+echo "Setup will now download and setup qemu/termux with audio fixed!"
 wget https://raw.githubusercontent.com/Win81VMUser/useful-stuff/main/Android/Termux-commands/Setup-QEMU-Audio-Full.sh && bash Setup-QEMU-Audio-Full.sh
 clear
 echo "Now setup will search all available mirrors to download disk..."
