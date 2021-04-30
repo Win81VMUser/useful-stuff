@@ -1,0 +1,31 @@
+echo "Downloading Discord(Webcord)..."
+wget https://github.com/Win81VMUser/useful-stuff/raw/main/Discord-arm.zip
+apt install unzip sudo -y
+unzip Discord-arm.zip
+clear
+echo "Cleaning temp files..."
+apt remove unzip -y
+clear
+echo "Installing Discord..."
+bash ~/Discord/install-32
+clear
+echo "Fixing Discord..."
+echo "WARNING! ANY DATA YOU USE ON PREVIOUS/NORMAL DISCORD MAY BE AT RISK! Do you want continue?(press key or press ctrl-c to quit)"
+pause
+echo "Setup will download fixed start command..."
+wget
+echo "WARNING! SETUP WILL ASK FOR ROOT PERMS FOR MOVE FILE TO DISCORD DIRECTORY WITHOUT PROBLEMS!!! Please type your password for root:"
+sudo mv 
+echo "Discord is fixed! Have fun!!!"
+clear
+echo "Done! Now start DE!"
+echo "Starting XFCE4..."
+echo "   "
+echo "   "
+echo "   "
+echo "   "
+export DISPLAY=127.0.0.1:0 PULSE_SERVER=tcp:127.0.0.1:4713
+export DISPLAY=127.0.0.1:0 PULSE_SERVER=tcp:127.0.0.1:4713
+export DISPLAY=127.0.0.1:0 PULSE_SERVER=tcp:127.0.0.1:4713
+echo "Starting SERVER"
+startxfce4
