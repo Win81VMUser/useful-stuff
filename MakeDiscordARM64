@@ -7,7 +7,7 @@ echo "Cleaning temp files..."
 apt remove unzip -y
 clear
 echo "Installing Discord..."
-bash Discord/install-64
+bash ~/Discord/install-64
 clear
 echo "Fixing Discord..."
 echo "WARNING! ANY DATA YOU USE ON PREVIOUS/NORMAL DISCORD MAY BE AT RISK! Do you want continue?(press key or press ctrl-c to quit)"
