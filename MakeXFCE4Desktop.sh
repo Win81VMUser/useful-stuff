@@ -2,7 +2,7 @@ echo "Starting update..."
 apt update
 echo "Selecting BEST desktop for you..."
 echo "Please Wait..."
-apt install xfce4 apt install xfce4-whiskermenu-plugin -y
+apt install xfce4 xfce4-whiskermenu-plugin -y
 clear
 echo "Done! Start xsdl and run these commands..."
 echo "   "
