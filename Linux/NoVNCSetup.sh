@@ -1,6 +1,6 @@
 echo "Starting commands..."
 lsb_release -a ; hostname -I; hostname ; getconf LONG_BIT
-echo "Installing packages needed for NoVNC(without DE)
+echo "Installing packages needed for NoVNC(without DE)"
 apt-get install vnc4server novnc websockify python-numpy -y
 vncserver
 vncserver -kill :1
