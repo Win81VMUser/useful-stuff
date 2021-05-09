@@ -1,27 +1,15 @@
-echo "WARNING YOU NEED PROOT-DISTRO UBUNTU TO MAKE IT WORKING! IF YOU DON'T HAVE IT PLEASE USE INSTALLER FROM github.com/Win8.1VMUser
-echo "Make sure you have 4 gb left on your phone storage!"
-apt update -y
-clear
-echo "Installing packages needed for qemu!"
-apt-get install gcc g++ make automake python -y && apt-get install git libglib2.0-dev libfdt-dev libpixman-1-dev zlib1g-dev -y
-clear
-echo "Downloading qemu..."
-git clone https://github.com/qemu/qemu
-clear
-echo "Creating build dir and setting up qemu!"
-cd qemu
-mkdir build
-clear
-echo "Installling ninja because it don't work..."
-apt install ninja -y
-clear
-echo "Installing spice protocol and spice..."
-apt install libspice-protocol-dev libspice-server-dev -y
-clear
-echo "Setting up qemu!!!"
-../configure --target-list=x86_64-softmmu --enable-spice
-make -j4
-make install
-clear
-echo "Now everything is done! Have fun on Spice Qemu!!!"
-
+echo "This will install Qemu Spice ON TERMUX NO LINUX OS!!! 500mb of space will be used!"
+wget https://github.com/mjuned47/qemu-termux/raw/master/qemu-system-spice_arm64.deb
+wget https://github.com/mjuned47/qemu-termux/raw/master/libspice-server_arm64.deb
+wget https://github.com/mjuned47/qemu-termux/raw/master/liborc_arm64.deb
+apt update && apt upgrade
+echo "Installing qemu..."
+dpkg -i libspice-server_arm64.deb
+dpkg -i liborc_arm64.deb
+dpkg -i qemu-system-spice_arm64.deb
+dpkg --configure -a
+apt --fix-broken install
+echo "Done! Now download aSpice app and have fun! Starting test command..."
+echo "Press ctrl-c to exit!"
+qemu-system-x86_64 -spice port=5900,addr=127.0.0.1,disable-ticketing $@ -monitor stdio
+echo "Spice is installed! Have fun!"
