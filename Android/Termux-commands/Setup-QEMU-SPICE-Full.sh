@@ -9,6 +9,7 @@ dpkg -i liborc_arm64.deb
 dpkg -i qemu-system-spice_arm64.deb
 dpkg --configure -a
 apt --fix-broken install
+apt install 
 echo "Done! Now download aSpice app and have fun! Starting test command..."
 echo "Press ctrl-c to exit!"
 qemu-system-x86_64 -spice port=5900,addr=127.0.0.1,disable-ticketing $@ -monitor stdio
