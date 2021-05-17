@@ -1,9 +1,9 @@
 echo "Downloading Discord(Webcord)..."
-wget https://github.com/SpacingBat3/electron-discord-webapp/releases/download/v1.3.1/webcord_1.3.1_arm64.deb
+wget https://github.com/SpacingBat3/WebCord/releases/download/v1.4.1/webcord_1.4.1_arm64.deb
 apt install sudo 
 clear
 echo "Installing Discord..."
-sudo dpkg -i webcord_1.3.1_arm64.deb
+sudo dpkg -i webcord_1.4.1_arm64.deb
 sudo dpkg --configure -a
 sudo apt --fix-broken install
 clear
