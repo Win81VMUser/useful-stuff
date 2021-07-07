@@ -1,12 +1,7 @@
 echo "This will install Qemu Spice ON TERMUX NO LINUX OS!!! 500mb of space will be used!"
-wget https://github.com/mjuned47/qemu-termux/releases/download/QEMU-4.2/liborc-0.4.32_aarch64.deb
-wget https://github.com/mjuned47/qemu-termux/releases/download/QEMU-4.2/libspice-server-0.14.91_aarch64.deb
-wget https://github.com/mjuned47/qemu-termux/releases/download/QEMU-4.2/qemu-system-aarch64-4.2.1_aarch64.deb
-wget https://github.com/mjuned47/qemu-termux/releases/download/QEMU-4.2/qemu-system-ppc64_aarch64.deb
-wget https://github.com/mjuned47/qemu-termux/releases/download/QEMU-4.2/qemu-system-riscv64_aarch64.deb
-wget https://github.com/mjuned47/qemu-termux/releases/download/QEMU-4.2/qemu-system-sparc64_aarch64.deb
-wget https://github.com/mjuned47/qemu-termux/releases/download/QEMU-4.2/qemu-system-x86-64-4.2_aarch64.deb
+wget 
 apt update && apt upgrade
+apt install unzip -y
 echo "Installing qemu..."
 dpkg -i *
 dpkg --configure -a
