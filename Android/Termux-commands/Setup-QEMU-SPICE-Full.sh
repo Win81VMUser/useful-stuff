@@ -1,10 +1,10 @@
 echo "This will install Qemu Spice ON TERMUX NO LINUX OS!!! 500mb of space will be used!"
 wget https://github.com/Win81VMUser/useful-stuff/raw/main/Android/Termux-commands/qemu-spice-4.2.zip
 apt update && apt upgrade
-apt install unzip -y
+pkg install unzip -y
 echo "Installing qemu..."
-unzip *
-dpkg -i *
+unzip qemu-spice-4.2.zip
+dpkg -i qemu-spice-4.2/*
 dpkg --configure -a
 apt --fix-broken install
 apt install liblz4
