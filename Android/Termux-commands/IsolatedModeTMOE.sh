@@ -1,4 +1,4 @@
-echo "Warning! It is REAL ISOLATED MODE, no proc or dev are mounted. You need edit file manually to enable them"
+echo "Warning! It is REAL ISOLATED MODE, proc or dev are mounted."
 echo "Use this for edit: nano ~/.config/tmoe-linux/proot_global.conf"
 cat > ${HOME}/.config/tmoe-linux/proot_global.conf<<-'EOF'
 MOUNT_SD=false
@@ -19,10 +19,10 @@ SYSTEM_DIR="/system"
 MOUNT_APEX=false
 APEX_DIR="/apex"
 
-MOUNT_PROC=false
+MOUNT_PROC=true
 PROC_DIR="/proc"
 FAKE_PROOT_PROC=true
 
-MOUNT_DEV=false
+MOUNT_DEV=true
 DEV_DIR="/dev"
 EOF
