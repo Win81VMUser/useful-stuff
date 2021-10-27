@@ -3,7 +3,7 @@ A list and programs that is useful in this time
 Go to Wiki for more info
 
 In folder Android, you find cool stuff for emulation and everything for ur android
-Limbo gold is best for sound(i will check what about memz nyan cat soon lol)
+Files are mostly created for limbo pc 6.0.0 and for termux
 
 In folder Windows, you find cool stuff for windows :)
 
